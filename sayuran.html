@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk sayuran</title>
+    <link rel="stylesheet" href="Style2.css">   
+  
+</head>
+<body>
+  <header>
+    <h1>Toko Buah Segar</h1>
+    <div class="cart-icon">
+      🛒 <span class="cart-count">0</span>
+    </div>
+  </header>  
+    <section id="products" class="products"style="padding: 2rem; scroll-margin-top: 120px;">
+        <div class="product-list">
+          <div class="product-item">
+            <img src="aset/Gambar3/bayam.jpg" alt="bayam" />
+            <p>bayam<br /><span>Rp 19.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/brokoli.jpg" alt="brokoli" />
+            <p>brokoli<br /><span>Rp 30.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/buncis.jpg" alt="buncis" />
+            <p>buncis<br /><span>Rp 20.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/cabai.jpg" alt="cabai" />
+            <p>cabai<br /><span>Rp 17.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/kacangpanjang.jpg" alt="kacangpanjang" />
+            <p>kacangpanjang<br /><span>Rp 25.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/kangkung.jpg" alt="kangkung" />
+            <p>kangkung<br /><span>Rp 10.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/kentang.jpg" alt="kentang" />
+            <p>kentang<br /><span>Rp 18.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/labu.jpg" alt="labu" />
+            <p>labu<br /><span>Rp 55.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/sawi.jpg" alt="sawi" />
+            <p>sawi<br /><span>Rp 12.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/selada.jpg" alt="selada" />
+            <p>selada<br /><span>Rp 14.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/terong.jpg" alt="terong" />
+            <p>terong<br /><span>Rp 23.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/tomat.jpg" alt="tomat" />
+            <p>tomat<br /><span>Rp 35.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="categories">
+        <h2>Lihat Produk Yang Lain Nya</h2>
+        <br>
+        <div class="categories">
+          <a href="semuaproduk.html" class="category-button">Semua Produk</a>
+          <a href="buah.html" class="category-button">Buah</a>
+          <a href="sayuran.html" class="category-button">Sayuran</a>
+          <a href="biji-bijian.html" class="category-button">Biji-bijian</a>
+        </div>     
+    </section>
+
+      <div class="full-center">
+        <a href="jualbeli.html" class="btn-login">Kembali</a>
+      </div>
+
+<script>
+  let cartCount = 0;
+  const cartCountElement = document.querySelector(".cart-count");
+
+  document.querySelectorAll(".buy-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      cartCount++;
+      cartCountElement.textContent = cartCount;
+      alert("Produk telah ditambahkan ke keranjang!");
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Buah</title>
+    <link rel="stylesheet" href="Style2.css">   
+  
+</head>
+<body>
+  <header>
+    <h1>Toko Buah Segar</h1>
+    <div class="cart-icon">
+      🛒 <span class="cart-count">0</span>
+    </div>
+  </header>  
+    <section id="products" class="products"style="padding: 2rem; scroll-margin-top: 120px;">
+        <div class="product-list">
+          <div class="product-item">
+            <img src="aset/Gambar3/a924623775e4974eec8367db7989bafa.jpg" alt="jeruk" />
+            <p>jeruk<br /><span>Rp 15.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar/0619bfd0-6c92-4fd3-b991-f69e62064a13.jpg" alt="Semangka" />
+            <p>Semangka<br /><span>Rp 25.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/42d72a0bf2973fcf5d3bc5f5556e882a.jpg" alt="pisang" />
+            <p>pisang<br /><span>Rp 33.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/0c97b30984b9cda29b02a6c95baf1a18.jpg" alt="rambutan" />
+            <p>rambutan<br /><span>Rp 20.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/a360abeba5bcb9f75b9d11834c237b3d.jpg" alt="mangga" />
+            <p>mangga<br /><span>Rp 45.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/ae92aaabd7f45e31a6a6649fbffbf900.jpg" alt="Durian" />
+            <p>Durian<br /><span>Rp 65.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/6adb466b0f54e60614902921719e1f95.jpg" alt="buah naga" />
+            <p>Buah naga<br /><span>Rp 14.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/4441584c95a505aa32af278fbd1ccec2.jpg" alt="Stroberi" />
+            <p>Stroberi<br /><span>Rp 35.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/2fc06e758fdf75d583e511b6097d1c1a.jpg" alt="Jambu monyet" />
+            <p>Jambu monyet<br /><span>Rp 30.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/d2d6a9a28d63015f3bf2cf142d16d1b1.jpg" alt="Alpukat" />
+            <p>Alpukat<br /><span>Rp 20.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/d2f5d336793292e30ec81fc717dc7196.jpg" alt="Apel" />
+            <p>Apel<br /><span>Rp 50.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+          <div class="product-item">
+            <img src="aset/Gambar3/3a00baa179a3c1765145e238e4641ef4.jpg" alt="Salak" />
+            <p>Salak<br /><span>Rp 25.000</span></p>
+            <button class="buy-btn">Beli</button>
+            <button class="tambah-btn">+</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="categories">
+        <h2>Lihat Produk Yang Lain Nya</h2>
+        <br>
+        <div class="categories">
+          <a href="semuaproduk.html" class="category-button">Semua Produk</a>
+          <a href="buah.html" class="category-button">Buah</a>
+          <a href="sayuran.html" class="category-button">Sayuran</a>
+          <a href="biji-bijian.html" class="category-button">Biji-bijian</a>
+        </div>     
+    </section>
+
+      <div class="full-center">
+        <a href="jualbeli.html" class="btn-login">Kembali</a>
+      </div>
+      
+
+<script>
+  let cartCount = 0;
+  const cartCountElement = document.querySelector(".cart-count");
+
+  document.querySelectorAll(".buy-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      cartCount++;
+      cartCountElement.textContent = cartCount;
+      alert("Produk telah ditambahkan ke keranjang!");
+    });
+  });
+</script>
+
+</body>
+</html>
